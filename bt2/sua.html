@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Don Hang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bt2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body id="myPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="clolapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="bt2.html" class="navbar-brand"><strong>KhoaTech STORE</strong></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="bt2.html"><strong>DANH SÁCH ĐƠN HÀNG</strong></a></li>
+                    <li><a href="taodon.html"><strong>TẠO ĐƠN HÀNG</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="sua" class="container-fluid bg-grey">
+        <h2>SỬA ĐƠN HÀNG</h2>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="panel panel-default">
+
+                    <div  class="panel-heading">
+                        
+                    <h4>Đơn hàng: DH15</h4>
+                    
+                        <!-- <div class="col-sm-4">
+                        <h4>THÔNG TIN KHÁCH HÀNG</h4>
+                        <p>Lò Văn Dự</p>
+                        <p>0852695925</p>
+                        
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>ĐỊA CHỈ GIAO HÀNG</h4>
+                            <p>0852695924</p>
+                            <p>Mường La, Sơn La</p>
+                            <p style="color: #f4511e;">Thay đổi địa chỉ giao hàng</p>
+                        </div> -->
+                    </div>
+
+                    <div class="panel-body">
+                        <div class="col-sm-6">
+                            <h4>THÔNG TIN KHÁCH HÀNG</h4>
+                            <p><span class="glyphicon glyphicon-user"></span> Ngô Thị Khoa</p>
+                            <p><span class="glyphicon glyphicon-earphone"></span> 0852695925</p>
+                            
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>ĐỊA CHỈ GIAO HÀNG</h4>
+                            <p>0852695924</p>
+                            <p>Quảng Đông, TP Thanh Hóa, Thanh Hóa</p>
+                            <p style="color: #f4511e;">Thay đổi địa chỉ giao hàng</p>
+                        </div><br>
+                        <h4>THÔNG TIN ĐƠN HÀNG</h4>
+                        <table class="table table-bordered ">
+                            <thead>
+                                <tr>
+                                    <th>Mã SKU</th>
+                                    <th>Tên sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Đơn giá</th>
+                                    <th>Thành tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>SP01</td>
+                                    <td>Tai nghe Bluetooth AirPods</td>
+                                    
+                                    <td>
+                                        <input type="text"  id="trong-bang" name="ngay-giao" size="5" placeholder="1"  required> <br>
+                                    </td>
+                                    <td>
+                                        <input type="text"  id="trong-bang" name="ngay-giao" size="5" placeholder="5.000.000"  required> <br>
+                                    </td>
+                                    <td>5.000.000</td>
+                                </tr>
+                                <tr>
+                                    <td>SP02</td>
+                                    <td>Sạc dự phòng A1244</td>
+                                    <td>
+                                        <input type="text"  id="trong-bang" name="ngay-giao" size="5" placeholder="2"  required> <br>
+                                    </td>
+                                    <td>
+                                        <input type="text"  id="trong-bang" name="ngay-giao" size="5" placeholder="600.000"  required> <br>
+                                    </td>
+                                    <td>1.200.000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="col-sm-4 total-goup">
+                            <p>Tổng tiền: </p>
+                            <p>Giảm giá: </p>
+                            <p>Phí giao hàng: </p>
+                            <p><strong>Khách hàng phải trả:</strong></p>
+                        </div>
+                        <div class="col-sm-4 total-goup">
+                            <p>6.200.000 </p>
+                            <p>0</p>
+                            <p>0</p>
+                            <p><strong>6.200.000</strong></p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div style="background-color: #fff;" class="panel-heading">
+                        <h4><span style="color: #f4511e;" class="glyphicon glyphicon-credit-card"></span>THANH TOÁN</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="col-sm-6 total-goup">
+                            <p>Đã thanh toán: 0 </p>
+                            
+                        </div>
+                        <div class="col-sm-6 total-goup">
+                            <p>Còn phải trả: 6.200.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading ">
+                        <h4><span style="color: #f4511e;" class="glyphicon glyphicon-bed"></span> GIAO HÀNG</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" checked>Đẩy qua hãng vận chuyển</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" checked>Tự gọi shipper</label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optradio1" checked>Nhận tại cửa hàng</label>
+                        </div>
+                    </div>
+                </div>
+        <button type="submit" class="taodon text-center"></i>CẬP NHẬT</button>
+
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div style="background-color: #fff;" class="panel-heading">
+                        <h4><span style="color: #f4511e;" class="glyphicon glyphicon-list-alt"></span> THÔNG TIN ĐƠN HÀNG 
+                            <span style="font-size: 16px; background-color: #f4511e; color: #fff; border-radius: 15px;padding: 8px;">
+                                Chờ xác nhận</span></h4>
+                        
+                    </div>
+                    
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <h4>Mã hóa đơn</h4>
+                            <input type="text" class="form-control" id="ma-don" name="ma-don" placeholder="DH15" required><br>
+
+                            <h4>Chi nhánh</h4>
+                            <select name="" id="input" class="form-control"  required="required">
+                                <option >Mặc định</option>
+                            </select>
+                            <br>
+
+                            <h4>Chính sách giá</h4>
+                            <select name="" id="input" class="form-control" required="required">
+                                <option value="0">Giá bán lẻ</option>
+                                <option value="1">Giá bán buôn</option>
+                            </select>
+                            <br>
+
+                            <h4>Ngày hẹn giao  </h4>
+                            <input type="text"  id="ngay-giao" name="ngay-giao"  placeholder="09/11/2021" required> <br>
+                            <br>
+
+                            <!-- <h4>Nhân viên</h4>
+                            <time type="text" class="form-control" id="nhan-vien" name="nhan-vien"   required><br>
+                            <br> -->
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading ">
+                        <h4>THÊM</h4>
+                    </div>
+                    <div class="panel-body">
+                        <h4>Ghi chú</h4>
+                        <textarea name="ghi-chu" id="ghi-chu" cols="30" rows="5" class="form-control" >Gọi trước khi giao hàng giúp mình nhé</textarea><br>
+
+                        <h4>Nhân viên</h4>
+                        <input type="text" class="form-control" id="nhan-vien" name="nhan-vien" placeholder="Ngô Thị Khoa"  required>
+                        <br>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        
+        <span class="glyphicon glyphicon-chevron-up" ></span>
+        
+    </a>
+    <p> Made By Ngô Thị Khoa <span style="color: #fff;" class="glyphicon glyphicon-heart"></span></p>
+</footer>
+</html>

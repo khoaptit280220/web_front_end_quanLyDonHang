@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan Ly Don Hang</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bt2.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body id="myPage">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    
+                </button>
+                <a href="bt2.html" class="navbar-brand"><strong>KhoaTech STORE</strong></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="bt2.html"><strong>DANH SÁCH ĐƠN HÀNG</strong></a></li>
+                    <li><a href="taodon.html"><strong>TẠO ĐƠN HÀNG</strong></a></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="danhsach" class="container-fluid bg-grey">
+
+        <div class="row">
+            
+            
+            <div class="col-sm-9">
+                <div class="panel panel-default">
+                <div class="panel-heading">
+                <ul class="nav nav-pills bg-white justify-content-between">
+                    <li class="nav-item">
+                        <a href="#tab1" data-toggle="tab" class="nav-link active">Tất Cả</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab2" data-toggle="tab" class="nav-link">Chờ Xác Nhận</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab3" data-toggle="tab" class="nav-link">Chuẩn Bị Hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab4" data-toggle="tab" class="nav-link">Đang Giao </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab5" data-toggle="tab" class="nav-link">Thành Công</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab6" data-toggle="tab" class="nav-link">Đã Hủy</a>
+                    </li>
+                </ul>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Trạng thái đơn hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                                    <th>Hủy đơn</th>
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DH15</td>
+                                    <td>Ngô Thị Khoa</td>
+                                    <td style="color: #f4511e;">Chờ xác nhận</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>6.200.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="sua.html">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH14</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                    <td style="color: #f4511e;">Chuẩn bị hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>549.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH13</td>
+                                    <td>Nguyễn Thị Trang</td>
+                                    <td style="color: #f4511e;">Đang giao hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>270.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH12</td>
+                                    <td>Lê Thị Trang</td>
+                                    <td style="color: #f4511e;">Đang giao hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>20/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH11</td>
+                                    <td>Nguyễn Trọng Minh</td>
+                                    <td style="color: #f4511e;">Đang giao hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>735.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH10</td>
+                                    <td>Nguyễn Văn Đạt</td>
+                                    <td style="color: #f4511e;">Chuẩn bị hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>695.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH09</td>
+                                    <td>Trần Thị Hương</td>
+                                    <td style="color: #f4511e;">Chờ xác nhận</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>10/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH08</td>
+                                    <td>Phạm Hoàng Vũ</td>
+                                    <td style="color: #f4511e;">Chờ xác nhận</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>890.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH07</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                    <td style="color: #f4511e;">Đang giao hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>999.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH06</td>
+                                    <td>Phạm Văn Đồng</td>
+                                    <td style="color: #f4511e;">Chuẩn bị hàng</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>555.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Đặng Văn Phong</td>
+                                    <td style="color: green;">Hoàn thành</td>
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>675.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Nguyễn Văn Anh</td>
+                                    <td style="color: green;">Hoàn thành</td>
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>1000.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Nguyễn Hoàng Hiếu</td>
+                                    <td style="color: green;">Hoàn thành</td>
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>28/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Nguyễn Thị Hoa</td>
+                                    <td style="color: green;">Hoàn thành</td>
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>700.000</td>
+                                    <td>27/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Trần Văn Biên</td>
+                                    <td style="color: green;">Hoàn thành</td>
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>300.000</td>
+                                    <td>26/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab2">
+                        
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                                    <th>Hủy đơn</th>
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DH15</td>
+                                    <td>Ngô Thị Khoa</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>6.200.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="sua.html">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH09</td>
+                                    <td>Trần Thị Hương</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>10/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH08</td>
+                                    <td>Phạm Hoàng Vũ</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>890.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH07</td>
+                                    <td>Phạm Hoàng Quân</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>480.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Lê Hoàng Đạt</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>890.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Nguyễn Văn Anh</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>1.000.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Nguyễn Tiến Nhật</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>8/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Nguyễn Thị Hoa</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove" ></span></td>
+                                    <td>700.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Trần Văn Bình</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>300.000</td>
+                                    <td>06/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab3">
+                         
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                                    <th>Hủy đơn</th>
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                    <tr>
+                                    <td>DH14</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>549.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH10</td>
+                                    <td>Ngô Thị Khoa</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>525.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH10</td>
+                                    <td>Nguyễn Văn Đạt</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>695.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH06</td>
+                                    <td>Phạm Văn Đồng</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>555.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Lê Văn Lâm</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>09/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                       </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Nguyễn Văn Nhật</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>1000.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Nguyễn Tiến Mai</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>08/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Nguyễn Thị Lan</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove" ></span></td>
+                                    <td>700.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Trần Đức Toản</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>300.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Sửa</span></a>
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button>
+                                            <a href="#"><span style="color: #f4511e;" >Hủy</span></a>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane" id="tab4">
+                        
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DH10</td>
+                                    <td>Ngô Thị Khoa</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>753.000</td>
+                                    <td>19/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DH09</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>1000.000</td>
+                                    <td>22/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DH13</td>
+                                    <td>Nguyễn Thị Trang</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>270.000</td>
+                                    <td>07/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH12</td>
+                                    <td>Lê Thị Trang</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>10/11/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH11</td>
+                                    <td>Nguyễn Trọng Minh</td>
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>735.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Lê Quỳnh Anh</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>450.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Nguyễn Văn Anh</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>1000.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Mai Tiến Anh</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>28/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Nguyễn Thị Liên</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove" ></span></td>
+                                    <td>700.000</td>
+                                    <td>27/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Trần Nguyễn Đức Long</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>300.000</td>
+                                    <td>26/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab5">
+                        
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                                    
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DH15</td>
+                                    <td>Ngô Thị Khoa</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>450.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH14</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>1000.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH09</td>
+                                    <td>Lê Tiến Mai</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>28/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH08</td>
+                                    <td>Nguyễn Thị Linh</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>700.000</td>
+                                    <td>27/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH07</td>
+                                    <td>Bùi Văn Biển</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>300.000</td>
+                                    <td>26/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Đặng Văn Phong</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>675.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="xemchitiet.html">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Nguyễn Văn Anh</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>1000.000</td>
+                                    <td>29/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Nguyễn Hoàng Hiếu</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>28/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Nguyễn Thị Hoa</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>700.000</td>
+                                    <td>27/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Trần Văn Biên</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-ok" style="color: green;"></span></td>
+                                    <td>300.000</td>
+                                    <td>26/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab6">
+                        
+                        <div class="panel-body">
+                            <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <!-- <label class="checkbox-inline"><input type="checkbox" ></label> -->
+                                 <!-- <th><label class="checkbox-inline text-center"><input type="checkbox" ></label></th> -->
+                                    <th>Mã đơn hàng</th>
+                                    <th>Tên khách hàng</th>
+                                    <th>Thanh toán</th>
+                                    <th>Khách phải trả</th>
+                                    <th>Ngày Tạo</th>
+                                    <th>Thêm</th>
+                                    
+                        
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>DH10</td>
+                                    <td>Ngô Thị Khoa</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>753.000</td>
+                                    <td>19/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DH09</td>
+                                    <td>Nguyễn Văn Đức</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>1000.000</td>
+                                    <td>22/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DH08</td>
+                                    <td>Nguyễn Tiến Anh</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>2.700.000</td>
+                                    <td>18/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>DH07</td>
+                                    <td>Nguyễn Thị Xoan</td>
+                                   
+                                    <td><span class="glyphicon glyphicon-remove" ></span></td>
+                                    <td>700.000</td>
+                                    <td>17/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH06</td>
+                                    <td>Lê Văn Sơn</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>300.000</td>
+                                    <td>16/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH05</td>
+                                    <td>Nguyễn Văn Sơn</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>600.000</td>
+                                    <td>16/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH04</td>
+                                    <td>Lê Văn Bình</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>495.000</td>
+                                    <td>17/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH03</td>
+                                    <td>Trần Văn Sâm</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>895.000</td>
+                                    <td>16/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH02</td>
+                                    <td>Bùi Minh Ngọc Văn</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>655.000</td>
+                                    <td>16/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DH01</td>
+                                    <td>Quách Văn Lan</td>
+                                    
+                                    <td><span class="glyphicon glyphicon-remove"></span></td>
+                                    <td>900.000</td>
+                                    <td>16/10/2021</td>
+                                    <td>
+                                        <button type="submit" class="xem-chi-tiet " >
+                                            <a href="#">
+                                            <span style="color: #f4511e;" >Chi tiết</span></a>
+                                        </button>
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        
+                        <button type="submit" class="xuatfile pull-right"><span  class="glyphicon glyphicon-download-alt"></span>  Xuất File</button>
+                        </div>
+                    </div>
+                    
+
+                </div>   
+                </div>
+                
+            </div>
+
+            <div class="col-sm-3">
+                <div class="panel panel-default">
+                    <div class="panel-heading ">
+                        <h4>TÌM KIẾM ĐƠN HÀNG</h4>
+                        <form class="form-inline">
+                            <div class="input-group">
+                                <input type="text" class="form-control" size="50" placeholder="Tìm kiếm theo mã hoặc tên khách hàng." required>
+                                <div class="input-group-btn">
+                                    <button style="background-color: #f4511e;" class="btn btn-default" type="submit">Tìm kiếm<i class="glyphicon glyphicon-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+        
+        <span class="glyphicon glyphicon-chevron-up" ></span>
+        
+    </a>
+    <p> Made By Ngô Thị Khoa <span style="color: #fff;" class="glyphicon glyphicon-heart"></span></p>
+</footer>
+
+</html>
